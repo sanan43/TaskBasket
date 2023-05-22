@@ -1,0 +1,18 @@
+﻿@model List<Product>
+
+
+@foreach(Product item in Model)
+{
+    <div class="col-lg-4 menu-item">
+        <a href="~/assets/img/menu/@item.ProductImage" class="glightbox"><img src="~/assets/img/menu/@item.ProductImage" class="menu-img img-fluid" alt=""></a>
+        <h4>@item.Name</h4>
+        <p class="ingredients">
+            @item.Ingredient
+        </p>
+        <p class="price">
+            @item.Price $
+        </p>
+    </div>
+    
+    <!-- Menu Item -->
+}

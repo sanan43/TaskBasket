@@ -1,0 +1,12 @@
+﻿@model List<Category>
+
+@foreach(Category item in Model)
+{
+    <li class="nav-item">
+        <a class="nav-link active show " data-bs-toggle="tab" data-bs-target="#menu-starters">
+            <h4>@item.Name</h4>
+        </a>
+    </li>
+
+    <!-- End tab nav item -->
+}
